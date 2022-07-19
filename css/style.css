@@ -74,6 +74,22 @@ body {
 	margin: -1px;
 }
 
+.page-header > .container,
+.site-nav,
+.auth-nav,
+.main-site-nav {
+	display: flex;
+	align-items: center;
+}
+
+/* .page-header > .container {
+	justify-content: center;
+} */
+
+.auth-nav {
+	margin-left: auto;
+}
+
 /* Site-logo */
 .page-header-logo {
 	color: var(--accent);
@@ -82,6 +98,7 @@ body {
 	font-size: 26px;
 	line-height: 1.19;
 	letter-spacing: 0.03em;
+	margin-right: 93px;
 }
 
 .page-header-logo span {
@@ -94,19 +111,46 @@ body {
 }
 
 /* Site-nav */
+
+.site-nav > .item:not(:last-child) {
+	margin-right: 50px;
+}
+
+.auth-nav > .item:not(:last-child) {
+	margin-right: 50px;
+}
+
+.page-header > .container {
+	display: flex;
+}
+
 .site-nav-link {
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
 	color: var(--title-text-color);
+
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
+
+	outline: 2px solid orange;
 }
 .auth-nav-link {
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
 	color: var(--primary-text-color);
+
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
+
+	outline: 2px solid orange;
 }
 
 .site-nav-link:hover,
